@@ -27,7 +27,7 @@ router
 // Protected route for user stats (any authenticated user)
 router
   .route('/stats')
-  .get(protect, getUserStats)
+  .get(protect, getUserStats);
 
 // Admin-only routes
 router.use(protect);
